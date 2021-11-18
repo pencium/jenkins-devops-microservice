@@ -1,5 +1,5 @@
 pipeline {
-	aegnt any
+	agent any
 	stages {
 		stage('Build') {
 			steps {
@@ -16,7 +16,8 @@ pipeline {
 				echo "Integration Test"
 			}
 		}
-	} post {
+	}
+	post {
 		always {
 			echo 'Im awesome. I run always'
 		}
